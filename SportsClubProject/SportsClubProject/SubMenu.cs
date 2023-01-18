@@ -29,7 +29,10 @@ namespace SportsClubProject
 
         private void FixMoveButton_Click(object sender, EventArgs e)
         {
-
+            //修正画面に移行
+            FixMenu FixForm = new FixMenu();
+            FixForm.Show();
+            this.Visible = false;
         }
 
         private void DeleteFormMove_Click(object sender, EventArgs e)
