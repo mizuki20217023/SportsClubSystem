@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SQLite;
 
 namespace SportsClubProject
 {
@@ -15,6 +9,24 @@ namespace SportsClubProject
         public MainMenu()
         {
             InitializeComponent();
+        }
+
+        private void FormMoveButton_Click(object sender, EventArgs e)
+        {
+            //サブメニューに移行
+            SubMenu SubForm = new SubMenu();
+            SubForm.Show();
+            this.Visible = false;
+        }
+
+        private void EndButton_Click(object sender, EventArgs e)
+        {
+            //システム終了の確認ダイアログ
+            if (MessageBox.Show("終了してもよろしいでしょうか？", "確認", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                //アプリケーション終了
+                Application.Exit();
+            }
         }
     }
 }
