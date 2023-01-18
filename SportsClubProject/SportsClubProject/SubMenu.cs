@@ -13,12 +13,18 @@ namespace SportsClubProject
 
         private void RegisterMoveButton_Click(object sender, EventArgs e)
         {
-
+            //登録画面に移行
+            RegisterMenu RegisterForm = new RegisterMenu();
+            RegisterForm.Show();
+            this.Visible = false;
         }
 
         private void SearchMoveButton_Click(object sender, EventArgs e)
         {
-
+            //検索画面に移行
+            SearchMenu SearchForm = new SearchMenu();
+            SearchForm.Show();
+            this.Visible = false;
         }
 
         private void FixMoveButton_Click(object sender, EventArgs e)

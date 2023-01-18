@@ -17,3 +17,6 @@ C:\Users\s20217023\Documents\SportsClubSystem\SportsClubProject\SportsClubProjec
 C:\Users\s20217023\Documents\SportsClubSystem\SportsClubProject\SportsClubProject\obj\Debug\SportsClubProject.csproj.CopyComplete
 C:\Users\s20217023\Documents\SportsClubSystem\SportsClubProject\SportsClubProject\obj\Debug\SportsClubProject.exe
 C:\Users\s20217023\Documents\SportsClubSystem\SportsClubProject\SportsClubProject\obj\Debug\SportsClubProject.pdb
+C:\Users\s20217023\Documents\SportsClubSystem\SportsClubProject\SportsClubProject\obj\Debug\SportsClubProject.RegisterMenu.resources
+C:\Users\s20217023\Documents\SportsClubSystem\SportsClubProject\SportsClubProject\obj\Debug\SportsClubProject.SubMenu.resources
+C:\Users\s20217023\Documents\SportsClubSystem\SportsClubProject\SportsClubProject\obj\Debug\SportsClubProject.SearchMenu.resources
