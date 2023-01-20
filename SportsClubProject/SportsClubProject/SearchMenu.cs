@@ -8,11 +8,19 @@ namespace SportsClubProject
 {
     public partial class SearchMenu : Form
     {
+        /// <summary>
+        /// フォーム起動時に準備
+        /// </summary>
         public SearchMenu()
         {
             InitializeComponent();
         }
 
+        /// <summary>
+        /// テーブルのID検索処理
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void SearchButtonClick(object sender, EventArgs e)
         {
             using (SQLiteConnection con = new SQLiteConnection("Data Source=SportsClub.db"))
@@ -26,6 +34,11 @@ namespace SportsClubProject
             }
         }
 
+        /// <summary>
+        /// サブフォームに移動する処理
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void BackButtonClick(object sender, EventArgs e)
         {
             SubMenu SubForm = new SubMenu();
@@ -33,6 +46,11 @@ namespace SportsClubProject
             this.Visible = false;
         }
 
+        /// <summary>
+        /// テーブルの表示設定
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void SearchMenuLoad(object sender, EventArgs e)
         {
             //奇数行の背景色を変更

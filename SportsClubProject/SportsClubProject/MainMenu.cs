@@ -6,7 +6,7 @@ namespace SportsClubProject
     public partial class MainMenu : Form
     {
         /// <summary>
-        /// フォーム起動時に準備するメソッド
+        /// フォーム起動時に準備
         /// </summary>
         public MainMenu()
         {
@@ -14,7 +14,7 @@ namespace SportsClubProject
         }
 
         /// <summary>
-        /// 登録管理画面に移行するためのメソッド
+        /// 登録管理画面に移行
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -27,7 +27,7 @@ namespace SportsClubProject
         }
 
         /// <summary>
-        /// システム終了時の確認処理のメソッド
+        /// システム終了時の確認処理
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>

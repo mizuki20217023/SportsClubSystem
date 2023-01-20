@@ -8,11 +8,19 @@ namespace SportsClubProject
 {
     public partial class RegisterMenu : Form
     {
+        /// <summary>
+        /// フォーム起動時に準備
+        /// </summary>
         public RegisterMenu()
         {
             InitializeComponent();
         }
 
+        /// <summary>
+        /// 会員情報を登録する処理
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void RegisterButtonClick(object sender, EventArgs e)
         {
             //会員情報を登録する処理
@@ -47,6 +55,11 @@ namespace SportsClubProject
             }
         }
 
+        /// <summary>
+        /// テーブルの中身を表示する処理
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void VerificationButtonClick(object sender, EventArgs e)
         {
             using (SQLiteConnection con = new SQLiteConnection("Data Source=SportsClub.db"))
@@ -60,6 +73,11 @@ namespace SportsClubProject
             }
         }
 
+        /// <summary>
+        /// サブメニューに移動する処理
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void BackButtonClick(object sender, EventArgs e)
         {
             SubMenu SubForm = new SubMenu();
@@ -67,6 +85,11 @@ namespace SportsClubProject
             this.Visible = false;
         }
 
+        /// <summary>
+        /// テーブルの表示設定
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void RegisterMenuLoad(object sender, EventArgs e)
         {
             //奇数行の背景色を変更

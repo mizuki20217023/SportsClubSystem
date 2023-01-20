@@ -8,11 +8,19 @@ namespace SportsClubProject
 {
     public partial class DeleteMenu : Form
     {
+        /// <summary>
+        /// フォーム起動時に準備
+        /// </summary>
         public DeleteMenu()
         {
             InitializeComponent();
         }
 
+        /// <summary>
+        /// 会員情報の削除処理
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void DeleteButtonClick(object sender, EventArgs e)
         {
             // メッセージボックスを表示
@@ -52,6 +60,11 @@ namespace SportsClubProject
             }
         }
 
+        /// <summary>
+        /// サブメニューに移動する処理
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void BackButtonClick(object sender, EventArgs e)
         {
             //登録管理画面に移行
@@ -60,6 +73,11 @@ namespace SportsClubProject
             this.Visible = false;
         }
 
+        /// <summary>
+        /// テーブルの表示設定
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void DeleteMenuLoad(object sender, EventArgs e)
         {
             //奇数行の背景色を変更

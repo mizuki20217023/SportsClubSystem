@@ -8,11 +8,19 @@ namespace SportsClubProject
 {
     public partial class FixMenu : Form
     {
+        /// <summary>
+        /// フォーム起動時に準備
+        /// </summary>
         public FixMenu()
         {
             InitializeComponent();
         }
 
+        /// <summary>
+        /// テーブルの修正処理
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void FixButtonClick(object sender, EventArgs e)
         {
             // メッセージボックスを表示
@@ -57,6 +65,11 @@ namespace SportsClubProject
             }
         }
 
+        /// <summary>
+        /// サブメニューに移動する処理
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void BackButtonClick(object sender, EventArgs e)
         {
             //登録管理画面に移行
@@ -65,6 +78,11 @@ namespace SportsClubProject
             this.Visible = false;
         }
 
+        /// <summary>
+        ///　テーブルの表示設定
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void FixMenuLoad(object sender, EventArgs e)
         {
             //奇数行の背景色を変更
