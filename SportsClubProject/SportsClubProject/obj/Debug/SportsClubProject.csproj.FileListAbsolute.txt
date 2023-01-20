@@ -21,3 +21,4 @@ C:\Users\s20217023\Documents\SportsClubSystem\SportsClubProject\SportsClubProjec
 C:\Users\s20217023\Documents\SportsClubSystem\SportsClubProject\SportsClubProject\obj\Debug\SportsClubProject.SubMenu.resources
 C:\Users\s20217023\Documents\SportsClubSystem\SportsClubProject\SportsClubProject\obj\Debug\SportsClubProject.SearchMenu.resources
 C:\Users\s20217023\Documents\SportsClubSystem\SportsClubProject\SportsClubProject\obj\Debug\SportsClubProject.FixMenu.resources
+C:\Users\s20217023\Documents\SportsClubSystem\SportsClubProject\SportsClubProject\obj\Debug\SportsClubProject.DeleteMenu.resources

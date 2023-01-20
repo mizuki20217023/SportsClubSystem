@@ -65,6 +65,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DeleteMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteMenu.Designer.cs">
+      <DependentUpon>DeleteMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="FixMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,6 +103,9 @@
     <Compile Include="SubMenu.Designer.cs">
       <DependentUpon>SubMenu.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="DeleteMenu.resx">
+      <DependentUpon>DeleteMenu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FixMenu.resx">
       <DependentUpon>FixMenu.cs</DependentUpon>
     </EmbeddedResource>

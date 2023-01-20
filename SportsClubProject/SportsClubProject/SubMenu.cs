@@ -37,7 +37,10 @@ namespace SportsClubProject
 
         private void DeleteFormMove_Click(object sender, EventArgs e)
         {
-
+            //削除画面に移行
+            DeleteMenu DeleteForm = new DeleteMenu();
+            DeleteForm.Show();
+            this.Visible = false;
         }
 
         private void BackButton_Click(object sender, EventArgs e)

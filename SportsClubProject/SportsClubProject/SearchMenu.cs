@@ -20,7 +20,7 @@ namespace SportsClubProject
                 // DataTableを生成します。
                 var dataTable = new DataTable();
                 // SQLの実行
-                var adapter = new SQLiteDataAdapter("SELECT * FROM SportsProduct WHERE M_NUMBER =" + SerchBox.Text, con);
+                var adapter = new SQLiteDataAdapter("SELECT * FROM SportsProduct WHERE MEMBERNUMBER =" + SerchBox.Text, con);
                 adapter.Fill(dataTable);
                 SportsDataView.DataSource = dataTable;
             }
