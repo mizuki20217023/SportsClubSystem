@@ -73,7 +73,7 @@ namespace SportsClubProject
             this.BackButton.TabIndex = 16;
             this.BackButton.Text = "戻る";
             this.BackButton.UseVisualStyleBackColor = true;
-            this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
+            this.BackButton.Click += new System.EventHandler(this.BackButtonClick);
             // 
             // DeleteButton
             // 
@@ -84,7 +84,7 @@ namespace SportsClubProject
             this.DeleteButton.TabIndex = 17;
             this.DeleteButton.Text = "削除";
             this.DeleteButton.UseVisualStyleBackColor = true;
-            this.DeleteButton.Click += new System.EventHandler(this.DeleteButton_Click);
+            this.DeleteButton.Click += new System.EventHandler(this.DeleteButtonClick);
             // 
             // DeleteMenu
             // 
@@ -98,7 +98,7 @@ namespace SportsClubProject
             this.Controls.Add(this.label1);
             this.Name = "DeleteMenu";
             this.Text = "削除画面";
-            this.Load += new System.EventHandler(this.DeleteMenu_Load);
+            this.Load += new System.EventHandler(this.DeleteMenuLoad);
             ((System.ComponentModel.ISupportInitialize)(this.SportsDataView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -11,7 +11,12 @@ namespace SportsClubProject
             InitializeComponent();
         }
 
-        private void RegisterMoveButton_Click(object sender, EventArgs e)
+        /// <summary>
+        /// 登録画面に移行する処理のメソッド
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void RegisterMoveButtonClick(object sender, EventArgs e)
         {
             //登録画面に移行
             RegisterMenu RegisterForm = new RegisterMenu();
@@ -19,7 +24,12 @@ namespace SportsClubProject
             this.Visible = false;
         }
 
-        private void SearchMoveButton_Click(object sender, EventArgs e)
+        /// <summary>
+        /// 検索画面に移行する処理のメソッド
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void SearchMoveButtonClick(object sender, EventArgs e)
         {
             //検索画面に移行
             SearchMenu SearchForm = new SearchMenu();
@@ -27,7 +37,12 @@ namespace SportsClubProject
             this.Visible = false;
         }
 
-        private void FixMoveButton_Click(object sender, EventArgs e)
+        /// <summary>
+        /// 修正画面に移行する処理のメソッド
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void FixMoveButtonClick(object sender, EventArgs e)
         {
             //修正画面に移行
             FixMenu FixForm = new FixMenu();
@@ -35,7 +50,12 @@ namespace SportsClubProject
             this.Visible = false;
         }
 
-        private void DeleteFormMove_Click(object sender, EventArgs e)
+        /// <summary>
+        /// 削除画面に移行する処理のメソッド
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void DeleteFormMoveClick(object sender, EventArgs e)
         {
             //削除画面に移行
             DeleteMenu DeleteForm = new DeleteMenu();
@@ -43,7 +63,7 @@ namespace SportsClubProject
             this.Visible = false;
         }
 
-        private void BackButton_Click(object sender, EventArgs e)
+        private void BackButtonClick(object sender, EventArgs e)
         {
             //登録管理画面に移行
             MainMenu MainForm = new MainMenu();
@@ -51,10 +71,10 @@ namespace SportsClubProject
             this.Visible = false;
         }
 
-        private void CreateTableButton_Click(object sender, EventArgs e)
+        private void CreateTableButtonClick(object sender, EventArgs e)
         {
             // テーブルを作成する  
-            using (var con = new SQLiteConnection("Data Source=SportsClub.db"))
+            using (SQLiteConnection con = new SQLiteConnection("Data Source=SportsClub.db"))
             {
                 con.Open();
                 using (SQLiteCommand command = con.CreateCommand())
@@ -66,11 +86,11 @@ namespace SportsClubProject
                 con.Close();
             }
         }
-
-        private void DeleteTableButton_Click(object sender, EventArgs e)
+  
+        private void DeleteTableButtonClick(object sender, EventArgs e)
         {
             // コネクションを開いてテーブル削除して閉じる 
-            using (var con = new SQLiteConnection("Data Source=SportsClub.db"))
+            using (SQLiteConnection con = new SQLiteConnection("Data Source=SportsClub.db"))
             {
                 con.Open();
                 using (SQLiteCommand command = con.CreateCommand())

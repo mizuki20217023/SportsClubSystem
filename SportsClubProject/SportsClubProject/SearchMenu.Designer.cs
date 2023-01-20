@@ -73,7 +73,7 @@ namespace SportsClubProject
             this.BackButton.TabIndex = 13;
             this.BackButton.Text = "戻る";
             this.BackButton.UseVisualStyleBackColor = true;
-            this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
+            this.BackButton.Click += new System.EventHandler(this.BackButtonClick);
             // 
             // SearchButton
             // 
@@ -84,7 +84,7 @@ namespace SportsClubProject
             this.SearchButton.TabIndex = 15;
             this.SearchButton.Text = "検索";
             this.SearchButton.UseVisualStyleBackColor = true;
-            this.SearchButton.Click += new System.EventHandler(this.SearchButton_Click);
+            this.SearchButton.Click += new System.EventHandler(this.SearchButtonClick);
             // 
             // SearchMenu
             // 
@@ -98,7 +98,7 @@ namespace SportsClubProject
             this.Controls.Add(this.SearchLabel);
             this.Name = "SearchMenu";
             this.Text = "会員検索";
-            this.Load += new System.EventHandler(this.SearchMenu_Load);
+            this.Load += new System.EventHandler(this.SearchMenuLoad);
             ((System.ComponentModel.ISupportInitialize)(this.SportsDataView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

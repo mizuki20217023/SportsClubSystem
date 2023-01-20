@@ -65,9 +65,9 @@ namespace SportsClubProject
             this.TellLabel.AutoSize = true;
             this.TellLabel.Location = new System.Drawing.Point(524, 35);
             this.TellLabel.Name = "TellLabel";
-            this.TellLabel.Size = new System.Drawing.Size(37, 15);
+            this.TellLabel.Size = new System.Drawing.Size(67, 15);
             this.TellLabel.TabIndex = 2;
-            this.TellLabel.Text = "住所";
+            this.TellLabel.Text = "電話番号";
             // 
             // NameBox
             // 
@@ -109,7 +109,7 @@ namespace SportsClubProject
             this.BackButton.TabIndex = 12;
             this.BackButton.Text = "戻る";
             this.BackButton.UseVisualStyleBackColor = true;
-            this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
+            this.BackButton.Click += new System.EventHandler(this.BackButtonClick);
             // 
             // VerificationButton
             // 
@@ -120,7 +120,7 @@ namespace SportsClubProject
             this.VerificationButton.TabIndex = 11;
             this.VerificationButton.Text = "確認";
             this.VerificationButton.UseVisualStyleBackColor = true;
-            this.VerificationButton.Click += new System.EventHandler(this.VerificationButton_Click);
+            this.VerificationButton.Click += new System.EventHandler(this.VerificationButtonClick);
             // 
             // RegisterButton
             // 
@@ -131,7 +131,7 @@ namespace SportsClubProject
             this.RegisterButton.TabIndex = 10;
             this.RegisterButton.Text = "登録";
             this.RegisterButton.UseVisualStyleBackColor = true;
-            this.RegisterButton.Click += new System.EventHandler(this.RegisterButton_Click);
+            this.RegisterButton.Click += new System.EventHandler(this.RegisterButtonClick);
             // 
             // RegisterMenu
             // 
@@ -150,7 +150,7 @@ namespace SportsClubProject
             this.Controls.Add(this.NameLabel);
             this.Name = "RegisterMenu";
             this.Text = "登録画面";
-            this.Load += new System.EventHandler(this.RegisterMenu_Load);
+            this.Load += new System.EventHandler(this.RegisterMenuLoad);
             ((System.ComponentModel.ISupportInitialize)(this.SportsDataView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

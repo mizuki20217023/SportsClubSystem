@@ -13,7 +13,7 @@ namespace SportsClubProject
             InitializeComponent();
         }
 
-        private void RegisterButton_Click(object sender, EventArgs e)
+        private void RegisterButtonClick(object sender, EventArgs e)
         {
             //会員情報を登録する処理
             using (SQLiteConnection con = new SQLiteConnection("Data Source=SportsClub.db"))
@@ -26,9 +26,9 @@ namespace SportsClubProject
                     // インサート
                     cmd.CommandText = "INSERT INTO SportsProduct (NAME, ADDRESS, TELL) VALUES (@NAME, @ADDRESS, @TELL)";
                     // パラメータセット
-                    cmd.Parameters.Add("NAME", System.Data.DbType.String);
-                    cmd.Parameters.Add("ADDRESS", System.Data.DbType.String);
-                    cmd.Parameters.Add("TELL", System.Data.DbType.String);
+                    cmd.Parameters.Add("NAME", DbType.String);
+                    cmd.Parameters.Add("ADDRESS", DbType.String);
+                    cmd.Parameters.Add("TELL", DbType.String);
                     // データ追加
                     cmd.Parameters["NAME"].Value = NameBox.Text;
                     cmd.Parameters["ADDRESS"].Value = AddressBox.Text;
@@ -38,36 +38,36 @@ namespace SportsClubProject
                     trans.Commit();
 
                     // DataTableを生成します。（データベースの表示処理）
-                    var dataTable = new DataTable();
+                    DataTable dataTable = new DataTable();
                     // SQLの実行
-                    var adapter = new SQLiteDataAdapter("SELECT * FROM SportsProduct", con);
+                    SQLiteDataAdapter adapter = new SQLiteDataAdapter("SELECT * FROM SportsProduct", con);
                     adapter.Fill(dataTable);
                     SportsDataView.DataSource = dataTable;
                 }
             }
         }
 
-        private void VerificationButton_Click(object sender, EventArgs e)
+        private void VerificationButtonClick(object sender, EventArgs e)
         {
             using (SQLiteConnection con = new SQLiteConnection("Data Source=SportsClub.db"))
             {
                 // DataTableを生成します。
-                var dataTable = new DataTable();
+                DataTable dataTable = new DataTable();
                 // SQLの実行
-                var adapter = new SQLiteDataAdapter("SELECT * FROM SportsProduct", con);
+                SQLiteDataAdapter adapter = new SQLiteDataAdapter("SELECT * FROM SportsProduct", con);
                 adapter.Fill(dataTable);
                 SportsDataView.DataSource = dataTable;
             }
         }
 
-        private void BackButton_Click(object sender, EventArgs e)
+        private void BackButtonClick(object sender, EventArgs e)
         {
             SubMenu SubForm = new SubMenu();
             SubForm.Show();
             this.Visible = false;
         }
 
-        private void RegisterMenu_Load(object sender, EventArgs e)
+        private void RegisterMenuLoad(object sender, EventArgs e)
         {
             //奇数行の背景色を変更
             SportsDataView.AlternatingRowsDefaultCellStyle.BackColor = Color.SkyBlue;
@@ -78,7 +78,7 @@ namespace SportsClubProject
             //ヘッダーとすべてのセルの内容に合わせて、行の高さを自動調整する
             SportsDataView.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
 
-            //列の項目名を中央揃えdataGridView1.ReadOnly = true;
+            //列の項目名を中央揃え
             SportsDataView.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
         }
     }

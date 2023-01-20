@@ -53,7 +53,7 @@ namespace SportsClubProject
             this.FormMoveButton.TabIndex = 1;
             this.FormMoveButton.Text = "登録管理画面";
             this.FormMoveButton.UseVisualStyleBackColor = true;
-            this.FormMoveButton.Click += new System.EventHandler(this.FormMoveButton_Click);
+            this.FormMoveButton.Click += new System.EventHandler(this.FormMoveButtonClick);
             // 
             // EndButton
             // 
@@ -64,7 +64,7 @@ namespace SportsClubProject
             this.EndButton.TabIndex = 2;
             this.EndButton.Text = "終了";
             this.EndButton.UseVisualStyleBackColor = true;
-            this.EndButton.Click += new System.EventHandler(this.EndButton_Click);
+            this.EndButton.Click += new System.EventHandler(this.EndButtonClick);
             // 
             // MainMenu
             // 

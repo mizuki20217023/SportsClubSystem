@@ -47,7 +47,7 @@ namespace SportsClubProject
             this.BackButton.TabIndex = 0;
             this.BackButton.Text = "戻る";
             this.BackButton.UseVisualStyleBackColor = true;
-            this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
+            this.BackButton.Click += new System.EventHandler(this.BackButtonClick);
             // 
             // RegisterMoveButton
             // 
@@ -58,7 +58,7 @@ namespace SportsClubProject
             this.RegisterMoveButton.TabIndex = 1;
             this.RegisterMoveButton.Text = "会員情報登録";
             this.RegisterMoveButton.UseVisualStyleBackColor = true;
-            this.RegisterMoveButton.Click += new System.EventHandler(this.RegisterMoveButton_Click);
+            this.RegisterMoveButton.Click += new System.EventHandler(this.RegisterMoveButtonClick);
             // 
             // SearchMoveButton
             // 
@@ -69,7 +69,7 @@ namespace SportsClubProject
             this.SearchMoveButton.TabIndex = 2;
             this.SearchMoveButton.Text = "会員情報検索";
             this.SearchMoveButton.UseVisualStyleBackColor = true;
-            this.SearchMoveButton.Click += new System.EventHandler(this.SearchMoveButton_Click);
+            this.SearchMoveButton.Click += new System.EventHandler(this.SearchMoveButtonClick);
             // 
             // FixMoveButton
             // 
@@ -80,7 +80,7 @@ namespace SportsClubProject
             this.FixMoveButton.TabIndex = 3;
             this.FixMoveButton.Text = "会員情報修正";
             this.FixMoveButton.UseVisualStyleBackColor = true;
-            this.FixMoveButton.Click += new System.EventHandler(this.FixMoveButton_Click);
+            this.FixMoveButton.Click += new System.EventHandler(this.FixMoveButtonClick);
             // 
             // DeleteFormMove
             // 
@@ -91,7 +91,7 @@ namespace SportsClubProject
             this.DeleteFormMove.TabIndex = 4;
             this.DeleteFormMove.Text = "会員情報削除";
             this.DeleteFormMove.UseVisualStyleBackColor = true;
-            this.DeleteFormMove.Click += new System.EventHandler(this.DeleteFormMove_Click);
+            this.DeleteFormMove.Click += new System.EventHandler(this.DeleteFormMoveClick);
             // 
             // CreateTableButton
             // 
@@ -102,7 +102,7 @@ namespace SportsClubProject
             this.CreateTableButton.TabIndex = 5;
             this.CreateTableButton.Text = "テーブル作成";
             this.CreateTableButton.UseVisualStyleBackColor = true;
-            this.CreateTableButton.Click += new System.EventHandler(this.CreateTableButton_Click);
+            this.CreateTableButton.Click += new System.EventHandler(this.CreateTableButtonClick);
             // 
             // DeleteTableButton
             // 
@@ -113,7 +113,7 @@ namespace SportsClubProject
             this.DeleteTableButton.TabIndex = 6;
             this.DeleteTableButton.Text = "テーブル削除";
             this.DeleteTableButton.UseVisualStyleBackColor = true;
-            this.DeleteTableButton.Click += new System.EventHandler(this.DeleteTableButton_Click);
+            this.DeleteTableButton.Click += new System.EventHandler(this.DeleteTableButtonClick);
             // 
             // SubMenu
             // 

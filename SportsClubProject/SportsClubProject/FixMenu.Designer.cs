@@ -127,7 +127,7 @@ namespace SportsClubProject
             this.BackButton.TabIndex = 15;
             this.BackButton.Text = "戻る";
             this.BackButton.UseVisualStyleBackColor = true;
-            this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
+            this.BackButton.Click += new System.EventHandler(this.BackButtonClick);
             // 
             // FixButton
             // 
@@ -138,7 +138,7 @@ namespace SportsClubProject
             this.FixButton.TabIndex = 16;
             this.FixButton.Text = "修正";
             this.FixButton.UseVisualStyleBackColor = true;
-            this.FixButton.Click += new System.EventHandler(this.FixButton_Click);
+            this.FixButton.Click += new System.EventHandler(this.FixButtonClick);
             // 
             // FixMenu
             // 
@@ -158,7 +158,7 @@ namespace SportsClubProject
             this.Controls.Add(this.FixLabel);
             this.Name = "FixMenu";
             this.Text = "修正画面";
-            this.Load += new System.EventHandler(this.FixMenu_Load);
+            this.Load += new System.EventHandler(this.FixMenuLoad);
             ((System.ComponentModel.ISupportInitialize)(this.SportsDataView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
