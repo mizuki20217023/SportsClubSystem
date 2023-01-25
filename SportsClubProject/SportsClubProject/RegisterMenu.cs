@@ -9,6 +9,11 @@ namespace SportsClubProject
     public partial class RegisterMenu : Form
     {
         /// <summary>
+        /// スポーツクラブの会員情報を表示させる処理
+        /// </summary>
+        private const string MemberDataView = "SELECT * FROM SportsProduct";
+
+        /// <summary>
         /// フォーム起動時に準備
         /// </summary>
         public RegisterMenu()
@@ -48,7 +53,7 @@ namespace SportsClubProject
                     // DataTableを生成します。（データベースの表示処理）
                     DataTable dataTable = new DataTable();
                     // SQLの実行
-                    SQLiteDataAdapter adapter = new SQLiteDataAdapter("SELECT * FROM SportsProduct", con);
+                    SQLiteDataAdapter adapter = new SQLiteDataAdapter(MemberDataView , con);
                     adapter.Fill(dataTable);
                     SportsDataView.DataSource = dataTable;
                 }
@@ -67,7 +72,7 @@ namespace SportsClubProject
                 // DataTableを生成します。
                 DataTable dataTable = new DataTable();
                 // SQLの実行
-                SQLiteDataAdapter adapter = new SQLiteDataAdapter("SELECT * FROM SportsProduct", con);
+                SQLiteDataAdapter adapter = new SQLiteDataAdapter(MemberDataView , con);
                 adapter.Fill(dataTable);
                 SportsDataView.DataSource = dataTable;
             }

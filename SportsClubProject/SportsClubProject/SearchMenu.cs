@@ -9,6 +9,11 @@ namespace SportsClubProject
     public partial class SearchMenu : Form
     {
         /// <summary>
+        /// 会員番号をもとに会員データベースから検索する処理
+        /// </summary>
+        private const string MemberNumberDataView = "SELECT * FROM SportsProduct WHERE MEMBERNUMBER =";
+
+        /// <summary>
         /// フォーム起動時に準備
         /// </summary>
         public SearchMenu()
@@ -28,7 +33,7 @@ namespace SportsClubProject
                 // DataTableを生成します。
                 DataTable dataTable = new DataTable();
                 // SQLの実行
-                SQLiteDataAdapter adapter = new SQLiteDataAdapter("SELECT * FROM SportsProduct WHERE MEMBERNUMBER =" + SerchBox.Text, con);
+                SQLiteDataAdapter adapter = new SQLiteDataAdapter(MemberNumberDataView + SearchBox.Text, con);
                 adapter.Fill(dataTable);
                 SportsDataView.DataSource = dataTable;
             }

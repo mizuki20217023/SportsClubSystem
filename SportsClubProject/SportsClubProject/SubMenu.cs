@@ -86,7 +86,7 @@ namespace SportsClubProject
         /// <param name="e"></param>
         private void CreateTableButtonClick(object sender, EventArgs e)
         {
-            // テーブルを作成する  
+            // テーブルを作成する
             using (SQLiteConnection con = new SQLiteConnection("Data Source=SportsClub.db"))
             {
                 con.Open();

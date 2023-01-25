@@ -30,7 +30,7 @@ namespace SportsClubProject
         private void InitializeComponent()
         {
             this.SearchLabel = new System.Windows.Forms.Label();
-            this.SerchBox = new System.Windows.Forms.TextBox();
+            this.SearchBox = new System.Windows.Forms.TextBox();
             this.SportsDataView = new System.Windows.Forms.DataGridView();
             this.BackButton = new System.Windows.Forms.Button();
             this.SearchButton = new System.Windows.Forms.Button();
@@ -47,12 +47,12 @@ namespace SportsClubProject
             this.SearchLabel.TabIndex = 1;
             this.SearchLabel.Text = "検索する会員の会員番号を入力してください";
             // 
-            // SerchBox
+            // SearchBox
             // 
-            this.SerchBox.Location = new System.Drawing.Point(541, 50);
-            this.SerchBox.Name = "SerchBox";
-            this.SerchBox.Size = new System.Drawing.Size(100, 22);
-            this.SerchBox.TabIndex = 2;
+            this.SearchBox.Location = new System.Drawing.Point(541, 50);
+            this.SearchBox.Name = "SearchBox";
+            this.SearchBox.Size = new System.Drawing.Size(100, 22);
+            this.SearchBox.TabIndex = 2;
             // 
             // SportsDataView
             // 
@@ -94,7 +94,7 @@ namespace SportsClubProject
             this.Controls.Add(this.SearchButton);
             this.Controls.Add(this.BackButton);
             this.Controls.Add(this.SportsDataView);
-            this.Controls.Add(this.SerchBox);
+            this.Controls.Add(this.SearchBox);
             this.Controls.Add(this.SearchLabel);
             this.Name = "SearchMenu";
             this.Text = "会員検索";
@@ -108,7 +108,7 @@ namespace SportsClubProject
         #endregion
 
         private System.Windows.Forms.Label SearchLabel;
-        private System.Windows.Forms.TextBox SerchBox;
+        private System.Windows.Forms.TextBox SearchBox;
         private System.Windows.Forms.DataGridView SportsDataView;
         private System.Windows.Forms.Button BackButton;
         private System.Windows.Forms.Button SearchButton;
