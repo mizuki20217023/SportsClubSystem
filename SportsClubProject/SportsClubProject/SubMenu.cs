@@ -86,18 +86,18 @@ namespace SportsClubProject
         /// <param name="e"></param>
         private void CreateTableButtonClick(object sender, EventArgs e)
         {
-            // テーブルを作成する
-            using (SQLiteConnection con = new SQLiteConnection("Data Source=SportsClub.db"))
-            {
-                con.Open();
-                using (SQLiteCommand command = con.CreateCommand())
+                // テーブルを作成する
+                using (SQLiteConnection con = new SQLiteConnection("Data Source=SportsClub.db"))
                 {
-                    command.CommandText =
-                        "create table SportsProduct(MEMBERNUMBER INTEGER  PRIMARY KEY AUTOINCREMENT,NAME TEXT, ADDRESS TEXT, TELL INTEGER)";
-                    command.ExecuteNonQuery();
+                    con.Open();
+                    using (SQLiteCommand command = con.CreateCommand())
+                    {
+                        command.CommandText =
+                            "create table SportsProduct(MEMBERNUMBER INTEGER  PRIMARY KEY AUTOINCREMENT,NAME TEXT, ADDRESS TEXT, TELL INTEGER)";
+                        command.ExecuteNonQuery();
+                    }
+                    con.Close();
                 }
-                con.Close();
-            }
         }
         
         /// <summary>
@@ -107,16 +107,25 @@ namespace SportsClubProject
         /// <param name="e"></param>
         private void DeleteTableButtonClick(object sender, EventArgs e)
         {
-            // コネクションを開いてテーブル削除して閉じる 
-            using (SQLiteConnection con = new SQLiteConnection("Data Source=SportsClub.db"))
+            // メッセージボックスを表示
+            DialogResult result = MessageBox.Show("本当に会員テーブルを削除しますか？", "確認", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
             {
-                con.Open();
-                using (SQLiteCommand command = con.CreateCommand())
+                // コネクションを開いてテーブル削除して閉じる 
+                using (SQLiteConnection con = new SQLiteConnection("Data Source=SportsClub.db"))
                 {
-                    command.CommandText = "drop table SportsProduct";
-                    command.ExecuteNonQuery();
+                    con.Open();
+                    using (SQLiteCommand command = con.CreateCommand())
+                    {
+                        command.CommandText = "drop table SportsProduct";
+                        command.ExecuteNonQuery();
+                    }
+                    con.Close();
                 }
-                con.Close();
+            }
+            else if (result == DialogResult.No)
+            {
+                MessageBox.Show("キャンセルしました");
             }
         }
     }
