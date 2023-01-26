@@ -86,20 +86,21 @@ namespace SportsClubProject
         /// <param name="e"></param>
         private void CreateTableButtonClick(object sender, EventArgs e)
         {
-                // テーブルを作成する
-                using (SQLiteConnection con = new SQLiteConnection("Data Source=SportsClub.db"))
+            // テーブルを作成する
+            using (SQLiteConnection con = new SQLiteConnection("Data Source=SportsClub.db"))
+            {
+                con.Open();
+                using (SQLiteCommand command = con.CreateCommand())
                 {
-                    con.Open();
-                    using (SQLiteCommand command = con.CreateCommand())
-                    {
-                        command.CommandText =
-                            "create table SportsProduct(MEMBERNUMBER INTEGER  PRIMARY KEY AUTOINCREMENT,NAME TEXT, ADDRESS TEXT, TELL INTEGER)";
-                        command.ExecuteNonQuery();
-                    }
-                    con.Close();
+                    command.CommandText =
+                        "create table SportsProduct(MEMBERNUMBER INTEGER  PRIMARY KEY AUTOINCREMENT,NAME TEXT, ADDRESS TEXT, TELL INTEGER)";
+                    command.ExecuteNonQuery();
                 }
+                con.Close();
+            }
+
         }
-        
+
         /// <summary>
         /// テーブルを削除する処理
         /// </summary>

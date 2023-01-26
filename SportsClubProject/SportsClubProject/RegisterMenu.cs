@@ -53,7 +53,7 @@ namespace SportsClubProject
                     // DataTableを生成します。（データベースの表示処理）
                     DataTable dataTable = new DataTable();
                     // SQLの実行
-                    SQLiteDataAdapter adapter = new SQLiteDataAdapter(MemberDataView , con);
+                    SQLiteDataAdapter adapter = new SQLiteDataAdapter(MemberDataView, con);
                     adapter.Fill(dataTable);
                     SportsDataView.DataSource = dataTable;
                 }
@@ -72,7 +72,7 @@ namespace SportsClubProject
                 // DataTableを生成します。
                 DataTable dataTable = new DataTable();
                 // SQLの実行
-                SQLiteDataAdapter adapter = new SQLiteDataAdapter(MemberDataView , con);
+                SQLiteDataAdapter adapter = new SQLiteDataAdapter(MemberDataView, con);
                 adapter.Fill(dataTable);
                 SportsDataView.DataSource = dataTable;
             }
