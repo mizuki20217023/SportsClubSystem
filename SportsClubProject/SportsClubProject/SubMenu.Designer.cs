@@ -40,13 +40,14 @@ namespace SportsClubProject
             // 
             // BackButton
             // 
+            this.BackButton.BackColor = System.Drawing.Color.Tomato;
             this.BackButton.Font = new System.Drawing.Font("MS UI Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.BackButton.Location = new System.Drawing.Point(85, 349);
             this.BackButton.Name = "BackButton";
             this.BackButton.Size = new System.Drawing.Size(145, 65);
             this.BackButton.TabIndex = 0;
             this.BackButton.Text = "戻る";
-            this.BackButton.UseVisualStyleBackColor = true;
+            this.BackButton.UseVisualStyleBackColor = false;
             this.BackButton.Click += new System.EventHandler(this.BackButtonClick);
             // 
             // RegisterMoveButton

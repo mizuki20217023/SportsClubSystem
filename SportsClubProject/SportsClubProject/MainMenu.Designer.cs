@@ -57,13 +57,14 @@ namespace SportsClubProject
             // 
             // EndButton
             // 
+            this.EndButton.BackColor = System.Drawing.Color.Tomato;
             this.EndButton.Font = new System.Drawing.Font("MS UI Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.EndButton.Location = new System.Drawing.Point(295, 283);
             this.EndButton.Name = "EndButton";
             this.EndButton.Size = new System.Drawing.Size(210, 78);
             this.EndButton.TabIndex = 2;
             this.EndButton.Text = "終了";
-            this.EndButton.UseVisualStyleBackColor = true;
+            this.EndButton.UseVisualStyleBackColor = false;
             this.EndButton.Click += new System.EventHandler(this.EndButtonClick);
             // 
             // MainMenu

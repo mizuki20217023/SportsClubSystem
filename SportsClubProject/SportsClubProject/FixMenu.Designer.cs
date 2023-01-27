@@ -120,13 +120,14 @@ namespace SportsClubProject
             // 
             // BackButton
             // 
+            this.BackButton.BackColor = System.Drawing.Color.Tomato;
             this.BackButton.Font = new System.Drawing.Font("MS UI Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.BackButton.Location = new System.Drawing.Point(172, 381);
             this.BackButton.Name = "BackButton";
             this.BackButton.Size = new System.Drawing.Size(141, 58);
             this.BackButton.TabIndex = 15;
             this.BackButton.Text = "戻る";
-            this.BackButton.UseVisualStyleBackColor = true;
+            this.BackButton.UseVisualStyleBackColor = false;
             this.BackButton.Click += new System.EventHandler(this.BackButtonClick);
             // 
             // FixButton
@@ -144,6 +145,7 @@ namespace SportsClubProject
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.FixButton);
             this.Controls.Add(this.BackButton);
