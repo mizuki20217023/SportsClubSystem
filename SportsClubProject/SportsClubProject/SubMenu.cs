@@ -4,6 +4,7 @@ using System.Data.SQLite;
 
 namespace SportsClubProject
 {
+    //会員登録管理のサブメニュー
     public partial class SubMenu : Form
     {
         /// <summary>
@@ -108,7 +109,7 @@ namespace SportsClubProject
         /// <param name="e"></param>
         private void DeleteTableButtonClick(object sender, EventArgs e)
         {
-            // メッセージボックスを表示
+            //確認メッセージボックスを表示
             DialogResult result = MessageBox.Show("本当に会員テーブルを削除しますか？", "確認", MessageBoxButtons.YesNo);
             if (result == DialogResult.Yes)
             {

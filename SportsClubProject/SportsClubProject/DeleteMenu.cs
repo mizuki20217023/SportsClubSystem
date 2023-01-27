@@ -6,6 +6,7 @@ using System.Data.SQLite;
 
 namespace SportsClubProject
 {
+    //会員登録管理の削除メニュー
     public partial class DeleteMenu : Form
     {
         /// <summary>

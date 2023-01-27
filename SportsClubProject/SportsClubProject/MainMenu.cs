@@ -3,6 +3,7 @@ using System.Windows.Forms;
 
 namespace SportsClubProject
 {
+    //会員登録管理のメインメニュー
     public partial class MainMenu : Form
     {
         /// <summary>
@@ -23,6 +24,7 @@ namespace SportsClubProject
             //サブメニューに移行
             SubMenu SubForm = new SubMenu();
             SubForm.Show();
+            //メインメニューを閉じる
             this.Visible = false;
         }
 

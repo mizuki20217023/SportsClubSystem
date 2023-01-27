@@ -6,6 +6,7 @@ using System.Data.SQLite;
 
 namespace SportsClubProject
 {
+    //会員登録管理の登録メニュー
     public partial class RegisterMenu : Form
     {
         /// <summary>
