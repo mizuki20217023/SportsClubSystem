@@ -41,6 +41,10 @@ namespace SportsClubProject
                 //アプリケーション終了
                 Application.Exit();
             }
+            else
+            {
+                return;
+            }
         }
     }
 }

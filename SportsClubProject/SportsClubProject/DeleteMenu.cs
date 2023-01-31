@@ -63,6 +63,7 @@ namespace SportsClubProject
             else if (result == DialogResult.No)
             {
                 MessageBox.Show("キャンセルしました");
+                return;
             }
         }
 
